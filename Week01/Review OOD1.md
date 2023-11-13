@@ -1,0 +1,135 @@
+# Review
+- What are the primitives in Java?
+    - int
+    - double
+    - long
+    - short
+    - byte
+    - float
+    - boolean
+    - char
+- How are arrays and arraylists different?
+    - Arrays are immutable in size
+    - Array lists can grow in size as needed
+- What is coupling?
+    - When an object of a class is dependant on an object in another class.
+    - Coupling is a measure of how dependent one class is on the implementation details of another class.
+- What does it mean to describe a class as a being tightly coupled to another class?
+    - Tight coupling between two classes means that class A relies very heavily on the implementation details of class B. This means that it will be difficult to add on to or expand either class A or B. Changing class B could break class A and it is difficult to expand on class A because you are tightly coupled to a concretion rather than an abstraction.
+- What is cohesion?
+    - Cohesion is the extent to which elements (attributes and methods) belong together in a class.
+- What are the four pillars?
+    - Abstraction
+        - Hiding implementation details from your users. 
+        - You should hide logic in methods and classes to make your code base easier to use, and easier to expand.
+    - Polymorphism
+        - The ability for methods to have methods to have many forms.
+        - Overriding - Ability for a child to define more specific implementations of a method defined in a parent class.
+        - Overloading - Same method signature, different parameters and implementations. This is used to give your users multiple ways to accomplish the same result given different inputs.
+    - Inheritance
+        - The ability to set up a parent child relationship between two class.
+        - 'Is-a' relationship
+        - All methods and attributes defined in the parent are available in the child.
+        - Useful for:
+            - Code resuse
+            - Reducing coupling between classes.
+    - Encapsulation
+        - Restricting access to attributes in a class by using access modifiers, getters and setters.
+        - Maximizing cohesion by grouping related elements.
+- What does the @Override annotation do?
+    - This annotation means that your code will throw a compile time error if the method signature does not exist in the parent class.
+    - This annotation is not mandatory, but is good practice to use it.
+- What does the final keyword do?
+    - Class
+        - Can't be inherited
+    - Method
+        - Can't be overriden
+    - Attribute
+        - Can't change the value
+- What is an access modifier?
+    - A keyword that determines where a class, method or attribute can be accessed and used.
+    - Public
+    - Private
+    - Default (package-private)
+        - Within the same package and class
+    - Protected
+        - Default while also the children can access
+- What is a ternary operator?
+    - A shorthand syntax for creating an efficient conditional statement.
+    - Harder to read, but useful when concision is key.
+    - Useful for lambda expressions
+- What is vertical constructor chaining?
+    - When a child class calls a constructor from its parent
+- What is a mandatory dependency?
+    - When a class requires a particular dependency to function. The class requires that dependency and makes the dependency mandatory by including the dependency in its constructor, and not prividing a constructor without the dependency.
+- What is the first line in any constructor?
+    - Super() - Vertical or this() - Horizontal
+- What is horizontal constructor chaining?
+    - You can make a call to another constructor within the same class to reuse code.
+# Interfaces and Abstract classes
+- What is an abstract class?
+    - Can't make an instance of the class.
+    - Define a base set of attributes and behaviors that classes will share.
+    - Solely for inheritance.
+    - Can also have abstract methods
+- What is an abstract method?
+    - Doesn't have a method body
+    - All concrete children are required to give implementations of inherited abstract methods.
+    - Are used to force children to have an implementation of the method.
+- What is an interface?
+    - Similar to an abstract class.
+    - Used for inheritance, allows multiple inheritance.
+- Interface vs abstract class?
+    - Interface
+        - Only access modifier is public
+        - All attributes are constants (public, static and final)
+        - Can implement multiple interfaces in a class.
+        - Cannot define constructors in interfaces
+        - Cannot define concrete, instance methods without the use of the default keyword.
+    - When to use Interface or Abstract class?
+        - Interfaces abstract out a related group of methods and behaviors
+        - Abstract used to abstract a base set of behaviors and attributes that a set of classes will share.
+        - Interfaces describe something a child can DO.
+        - Abstract classes describe what a child IS.
+# Casting
+- What is casting?
+    - Changing from one datatype to another datatpye.
+- Why is it useful to upcast?
+    - To increase flexibility by reducing coupling.
+    - Relies on a parent reference without caring about child implementation.
+- What is upcasting?
+    - Using a parent reference to point to a child object.
+- What is downcasting?
+    - Taking a parent reference that points to a child object and reverting back to a child reference that points to a child object.
+- Why do you need to downcast?
+    - You have a parent reference but need child specific methods, you need a child reference.
+- How do you make downcasting more safe? What do I mean when I say downcasting is unsafe?
+    - Create a conditional to check if a class is an instance of another class.
+        - If(parentReference instance of ChildClass){
+            //Logic to cast here
+        }
+        - Should avoid downcasting if possible because even if you prevent a class cast exception by using the instance of keyword, you are now creating a branch in logic.
+    - When looping through a list, it's not inheritly bad.
+# Memory Management
+- What is the stack?
+    - Where methods and local variables
+- What is the heap?
+    - Where objects and ther data are stored.
+- What is the string pool?
+    - Checks if the value of a string already exists in the heap?
+- Is Java compiled or interpreted?
+    - Both
+- What is the JVM?
+    - Java Virtual Machine.
+    - Interpreter for Java
+    - Turns Java byte code into machine code.
+- What is the garbage collector?
+    - Part of the JVM that reclaims memory for objects that are no longer used anymore.
+    - Java is bad for a real-time applications
+- What do pass by value/reference mean?
+    - By value - Passing data into a method, the data is copied and the method deals with the copy.
+    - By reference - When you pass data into a method, a pointer to that data is given and any changes made in the method will be reflected outside the method as well.
+- Is Java a pass by value, or pass by reference language?
+    - Pass by value
+    - Remember that the value for an object variable is a memory address. A reference.
+    - Any changes made to an object using a reference within a method will not apply to the objects.

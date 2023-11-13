@@ -1,0 +1,74 @@
+# Presentations
+## Importance
+- Confidence
+    - Research
+    - Practice
+- Effectiveness
+    - Passion
+    - Knowledgable
+    - Rapport
+        - Calling on someone individually
+        - Asking questions
+        - Eye contact
+        - Pauses
+        - Strong opening/closing
+        - Topics page/road map
+- Things to Consider
+    - Audience
+        - Do not go into technical detail if they don't have a technical background
+    - Topic
+    - Structure
+    - Duration  
+        - 15 mins
+    - When and Where?
+        - After elevator pitches on Friday
+    - Tools
+    - Delivery
+    - Number the power points
+- Questions
+    - Prepare for questions
+    - Thank them
+    - Answer truthfully
+        - if you don't know, 
+    - Refer the question back to them
+- Conclusion
+    - Stand out
+    - Have a question
+    - Have a quote
+- Python and Cloud Computing
+    - Python
+        - History
+        - Where it's at now
+        - How and where it's used
+        - Differences between Python and other popular languages
+# Cloud Computing
+- Topics
+    - Evolution
+    - History
+    - Where it's at now
+    - How is it useful
+    - What is it?
+    - Why you should/shouldn't use it?
+    - Types of Cloud services
+- Roadmap
+    - We can ask if anyone knows about cloud computing.
+    - Before cloud computing, how were these problems solved?
+- Slides
+    - Title
+    - Agenda
+    - Brief History
+    - Where it's at now
+    - What is cloud computing?
+        - Cloud Computing can be defined as delivering computing power (CPU, RAM, Network Speeds, Storage, OS) a service over a network rather than physically having the computing resources at the customer location.
+    - Benefits or Why cloud computing
+    - Types of cloud computing
+    - Types of cloud services
+    - How are cloud computing charges incurred?
+    - Conclusion
+        - Summary (Now You Know)
+            - What is cloud computing
+            - Where it can be useful
+            - Where you might already be using it
+        - Closing statement
+        - A quote or question for the audience
+    - Questions

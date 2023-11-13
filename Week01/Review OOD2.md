@@ -1,0 +1,72 @@
+# Exceptions
+- What are exceptions?
+    - Objects that are used to represent disruptions to the application.
+- What are the two kinds of exceptions?
+    - Checked and Unchecked
+- How should you deal with exceptions?
+    - Checked
+        - throw or try catch blocks
+        - Throw
+            - Not within the scope to solve the problem
+        - Try catch blocks
+            - Can be solved within the scope
+        - Throws
+    - Unchecked exception
+        - Code problem, shouldn't be caught
+- What kinds of problems should you represent using each exception type?
+    - Checked Exception
+        - Something occurs outside of the control of your code.
+            - Can be recovered from
+    - Unchecked Exception
+        - Problem that occurs due to poor quality code.
+            - Can't or shouldn't be caught.
+- What is JUNIT?
+    - A unity testing framework for Java
+- What is a unit?
+    - The smallest testable piece of code
+- What is unit testing?
+    - The process of testing all of the smallest testable piece of code in isolation
+- What is TDD?
+    - Test Driven Development
+        - A process where you write tests and write code to pass the tests.
+        - Design the tests, write the code.
+- What are the five steps of the TDD process?
+    1. Write the tests
+    2. Make it compile
+    3. Watch it fail
+    4. Write the minimum amount of code necessary to pass ALL tests.
+    5. Refactor and generalize
+- What kinds of tests can you write using junit alone?
+    - State based tests
+        - This means that junit can only test units that change state.
+- What is Mockito?
+    - A mocking framework
+        - Used to create mock objects
+    - Behavioral tests
+        - The interaction between classes
+- When do you need to use Mockito?
+    - Whenever you are testing a class with dependencies
+- What is a mock object?
+    - Fake implementation of a class whose output can be precisely controlled.
+- What is stubbing?
+    - Forcing a mock object to return something other than the default value for a method.
+- What does the verify statement do?
+    - A method which is used to determine if a test passed or failed based on whether or not a method was called on a mocked object.
+# Collections
+- What are the four collections?
+    - List
+        - Used as a generic way to store data
+    - Queues
+        - Used when simulating a line. Storing data based on priority
+    - Set
+        - Used when storing information without duplicates
+    - Map
+        - Used when you want fast data retrieval
+- What does it mean to be ordered and what does it mean to be sorted?
+    - Ordered
+        - Indexed
+    - Sorted
+        - Sorted colelctions place elements in a particular order based on comparisons.
+- What are generics?
+    - A way to provide type safety for classes at compile time.
+    - Used to make classes that can be instantiated to deal with a given datatype.
