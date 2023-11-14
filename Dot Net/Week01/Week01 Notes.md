@@ -114,7 +114,7 @@
         - You can use literal characters
             - Ex: Filepaths
             - Ex: SQL Queries
-            ![Image of SQL Queries](image.png)
+            ![Image of SQL Queries](images/image.png)
 - Interpolation
     - Brace operator is a type of interpolation
     - Better way is to use the $ in C#
@@ -226,16 +226,16 @@
 ## Properties
 - Instead of using getters and setters, C# uses properties
     - Ex: 
-    - ![Alt text](image-1.png)
+    - ![Alt text](images/image-1.png)
 - Can be directly assigned instead of called when using getters and setters
     - Ex:
-    - ![Alt text](image-2.png)
+    - ![Alt text](images/image-2.png)
 - Can create additional properties that work off of previously created variables
     - Ex:
-    - ![Alt text](image-3.png)
+    - ![Alt text](images/image-3.png)
 - Can use lambda operators for more cleaner and concise code:
     - Ex:
-    - ![Alt text](image-4.png)
+    - ![Alt text](images/image-4.png)
 - What is a benefit of using this?
     - More cleaner and concise code
     - A use of encapsulation
@@ -259,21 +259,21 @@
     - What is init?
         - Acts as a set, but only allows usage within the constructor.
         - Ex:
-        - ![Alt text](image-5.png)
+        - ![Alt text](images/image-5.png)
             - Now we don't need the private readonly int _id;
             - Ex:
-            - ![Alt text](image-6.png)
+            - ![Alt text](images/image-6.png)
             - This is called auto-implemented property
         - It can still be set from the calling code (initialization of the object)
             - And we can remove that by adding an access modifier to the get or set or init, so we can prohibit accessibility
             - Ex:
-            - ![Alt text](image-7.png)
+            - ![Alt text](images/image-7.png)
 ## Constructors
 - Static constructors
     - A static constructor is used to initialize any static data.
     - Used to perform an action that needs to be performed once only
     - It's automatically called before the first instance is created or any static members are referenced
-    - ![Alt text](image-15.png)
+    - ![Alt text](images/image-15.png)
 - base()
     - Vertical constructor chaining
     - Equivelant to super() in Java
@@ -281,15 +281,15 @@
     - In a derived calss, if a base-class constructor is not called explicitly by using the base keyword, the default constructor is called implicitly if there is one.
     - If a base class doens't offer a default constructor, the derived class must make an explicit call to a base constructor by using base()
     - Ex:
-    - ![Alt text](image-8.png)
-    - ![Alt text](image-9.png)
+    - ![Alt text](images/image-8.png)
+    - ![Alt text](images/image-9.png)
 - this()
     - Horizontal constructor chaining
     - Can use to invoke another constructor within the same class.
     - Refers to the current instance of the lass
     - Used to differentiate between method parameters and class fields when they have the same name.
     - Ex:
-    - ![Alt text](image-10.png)
+    - ![Alt text](images/image-10.png)
 ## Classes and Objects
 - Abstract 
     - classes
@@ -301,7 +301,7 @@
         - indexers
         - events
     - Ex:
-    - ![Alt text](image-11.png)
+    - ![Alt text](images/image-11.png)
 - Inheriting methods
     - Add virtual to the parent class
     - Add override to the child class of the method with the same signature.
@@ -311,7 +311,7 @@
     - Ex: employee is Trainee
 - Can use keyword 'as' to see what type a class is, similar to 'is'
     - Ex: Trainee traineeEmpl = employee as Trainee;
-    - ![Alt text](image-12.png)
+    - ![Alt text](images/image-12.png)
     - Use ? to get rid of error
 ## Interfaces
 - Interfaces start with capital I
@@ -322,12 +322,12 @@
 - Structs can implement an interface
 - Interfaces can have static methods, but must have implementation
 - An interface may define a default implementation for members.
-    - ![Alt text](image-13.png)
+    - ![Alt text](images/image-13.png)
 - Can inherit from other interfaces
     - Abstract classes can inherit interfaces, but do not need to implement the methods and fields.
         - The first concrete class that inherits from that abstract class WILL need to inherit from the interfaces in the abstract class.
-            - ![Alt text](image-14.png)
+            - ![Alt text](images/image-14.png)
 - Explicit interface implementation
-    - ![Alt text](image-16.png)
+    - ![Alt text](images/image-16.png)
 ## Casting
 - Ex: ((IbasketItem)item).Name

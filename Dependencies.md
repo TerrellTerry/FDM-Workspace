@@ -8,3 +8,4 @@
 - Has many relationship
 ## Composition
 - Is a relationship
+- Empty arrow is 
