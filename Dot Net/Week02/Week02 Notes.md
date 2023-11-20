@@ -37,6 +37,7 @@
     - NUnit
     - NUnit3TestAdapter
     - Microsoft.NET.Test.SDK
+    - Moq
 - Attributes
     - Same as annotations in Java
     - Key attributes in NUnit
@@ -59,3 +60,46 @@
         - https://docs.nunit.org/index.html
 - Running a NUnit test
     - Test -> Run All Tests
+- Ex: ![Alt text](image-5.png)
+## Moq
+- Why mock?
+    - Test behavior and data
+    - Test code units in isolation
+    - Test void methods
+    - Verify objects are interacting correctly
+- What is a mock object?
+    - Has all methods of the real object
+    - Has state, set to default values for the data type.
+    - Static methods and data are the same as the real object.
+    - Invoking instance methods returns default vlaues
+    - No code is invoked in the class when methods are called on the mock.
+- What is stubbing?
+    - Forces a mock to return a value of our choice instead of the default when calling a method.
+- What is verification?
+    - Checks that interactions occur as expected.
+    - This is done after we use the mock.
+- Creating a mock and stubbing:
+    - Ex: ![Alt text](image.png)
+- Creating a mock and verify:
+    - Ex: ![Alt text](image-1.png)
+## Generics
+- What are generics?
+    - Makes it possible to design general purpose classes, interfaces, abstract classes, fields, methods, static methods, properties, events, delegates, and operators.
+    - Introduces the concept of type parameteres.
+    - A placeholder for any data type that will be later specified.
+- Why use generics?
+    - Performance advantage because it removes the possibilities of boxing and unboxing.
+    - Allows you to specify the type of object that another object should deal with in a dynamic way.
+        - Ex: Lists can only deal with the object that's passed into the type parameter.
+            - List<String> strings = new List<String>();
+                - This list can only add strings
+    - Compile-time safety.
+- When would you use generics?
+    - Create generic interfaces, classes, methods, events and delegates.
+    - Generic classes may be constrained to enable acces to methods on particular data types.
+    - Information on the types that are used in a generic data type may be obtained at run-time by using reflection
+- Generic classes
+    - Ex: ![Alt text](image-2.png)
+        - T is just a variable. In C#, you can put whatever you want here, maybe with more info.
+    - ![Alt text](image-3.png)
+    - ![Alt text](image-4.png)

@@ -1,0 +1,45 @@
+# Week 2 Notes
+## Collections
+- Collections Class
+    - Provides functionality and methods that can be acted on a group of objects.
+- Ordered Collections
+    - Can iterate over the elements in a specific order.
+- Unordered Collections
+    - The elements have no relation to each other
+- Sorted collections
+    - Ordered collections may be sorted or unsorted
+    - A sorted collections is ordered according to some rule imposed by the element content
+        - It maintains its sorted state as elements are inserted and removed
+    - An unsorted ordered collections is ordered in a way that has no relation to the element content
+- Collections Nampespace
+    - Systems.Collections Namspace contains interfaces and classes that define different collections of objects
+- What does the collection interface inherit from?
+    - The IEnumerable class
+- What is the Collections interface?
+    - The base interface for classes in the system.collections namespace.
+    - Two key interfaces
+        - IList
+        - IDictionary
+- IList
+    - Represents a non generic collection of object that can be accessed by index
+    - Ordered collection (sequence)
+    - Defines methods to manipulate by position
+- ISet
+    - Interface for implementing sets
+        - HashSet
+            - Unordered
+        - SortedSet
+    - Sets are collections that have unique elements and specific operations
+    - It does not have an index
+    - Does not allow duplicates
+    - Items within must obey the rule of equality
+        - Check the hashcode, if it's equal, check the equality.
+- Dictionary
+    - Key value pairs
+- Stack
+    - Last in first out (Stack of plates, grab from the top)
+    - Push - Inserts at top
+    - Pop - Removes from top
+    - Peek - Check the top of stack without removing
+- Queue
+- LinkedList

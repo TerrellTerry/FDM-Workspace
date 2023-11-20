@@ -331,3 +331,7 @@
     - ![Alt text](images/image-16.png)
 ## Casting
 - Ex: ((IbasketItem)item).Name
+## Keywords
+- sealed
+    - Makes a class unable to be inheritied from
+        - Similar to final from Java
