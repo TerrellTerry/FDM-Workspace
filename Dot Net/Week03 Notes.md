@@ -1,4 +1,4 @@
-# Week 2 Notes
+# Week 3 Notes
 ## Collections
 - Collections Class
     - Provides functionality and methods that can be acted on a group of objects.
