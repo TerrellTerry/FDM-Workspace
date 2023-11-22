@@ -47,6 +47,7 @@
             - Mark a method inside a TestFixture class as a test
         - [TestCase(12, 3, 4)]
             - Serves the dual purpose of marking a method with parameters as a test method and providing inline data to be used when invoking that method.
+            - Can use testcase on a single method to test same type of tests that take in or assert similar things
         - [OneTimeSetUp]    
             - Performs prior to executing any of the tests in a fixture.
         - [OneTimeTearDown]
@@ -103,3 +104,8 @@
         - T is just a variable. In C#, you can put whatever you want here, maybe with more info.
     - ![Alt text](image-3.png)
     - ![Alt text](image-4.png)
+- Implementing Interface Using Generics
+    - You must use the concrete types
+        - Ex: public class UserArrayRepository : IArrayRepository<IUser, int>
+            - IArrayRepository class signature
+                - public interface IArrayRepository<E, ID>

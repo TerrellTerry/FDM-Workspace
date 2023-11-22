@@ -40,6 +40,49 @@
     - Last in first out (Stack of plates, grab from the top)
     - Push - Inserts at top
     - Pop - Removes from top
+        - Cannot pop empty stack
     - Peek - Check the top of stack without removing
 - Queue
+    - First in first out
+    - Allows duplicates
+    - Enqueue - Adds to the end of queue
+    - Dequeue - Removes the oldest element
+    - Peek
 - LinkedList
+    - Allows fast inserting and removing of elements
+    - Elements are linked with each other using pointers
+    - It is doubly linked, in that each node points forward to the next node and backwards to the previous node.
+- Comparator
+    - Ex: public class User : IComparable<User>
+        - Implements the CompareTo method
+            - This allows comparing based on defined values
+                - Ex: Compare based on ID, less than, greater than and equal to.
+                    - a - b or this.id - otheruser.id
+- Comparer
+    - Extension of another class
+    - ![Alt text](image-1.png)
+    - Example using strings:
+        - ![Alt text](image-2.png)
+## Exceptions
+- What are exceptions?
+    - An event that disrupts the normal flow of instructions during the execution of a program
+        - Ex: Files not available
+            - Network connection lost
+            - Database server restarted
+- What are errors?
+    - Problems which cause the program to operate incorrectly.
+- NUnit and Exceptions
+    - ![Alt text](image-3.png)
+## IO (Input/Output)
+- File I/O
+    - A file is a collection of data stored in a disk with a specific name and directory path.
+    - Uses the System.IO namespace and has various classes that are used to read and write data to files.
+- Streams
+    - When a file is opneed for reading or writing, it becomes a stream
+    - Input is used for reading
+    - Output is used for writing
+    - A generic view of a sequence of bytes
+- Basic IO
+    - ![Alt text](image-4.png)
+- File IO
+    - ![Alt text](image-5.png)
